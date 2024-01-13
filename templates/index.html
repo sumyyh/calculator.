@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #f2f2f2;/
+            font-family: 'Arial', sans-serif;
+        }
+
+        .calculator-box {
+            width: 300px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: #38c5bed5; 
+            color: #030000; 
+            border: 1px solid #555555;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #503a83; 
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #070000ec;
+        }
+
+        input[type="number"] {
+            width: 150px;
+            padding: 8px;
+            border: 1px solid #777777; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #333333; 
+            background-color: #f1e6e6e8;  
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+            color: #cccccc; 
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #3b0b5cbe; 
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:,
+        input[type="reset"]: {
+            background-color: #4b9035; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator-box">
+        <h1>CALCULATOR</h1>
+        <form action="/result" method="post">
+            <label for="num1">Enter First Number</label>
+            <input type="number" id="num1" name="num1"> 
+            <label for="num2">Enter Second Number</label>
+            <input type="number" id="num2" name="num2"><br><br>
+            <b>SELECT YOUR OPERATION</b><br><br>
+            <input type="radio" value="addition" name="operation">Addition
+            <input type="radio" value="multiplication" name="operation">Multiplication<br>
+            <input type="radio" value="division" name="operation">Division
+            <input type="radio" value="subtraction" name="operation">Subtraction<br><br>
+            <input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
